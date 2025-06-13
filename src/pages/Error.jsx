@@ -1,7 +1,7 @@
 const Error = ()=>{
     return (
         <div>
-            <h1>This Error is being opened through the file</h1>
+            <h1>Oh no! this is an error</h1>
             <h2>Sorry, through the external file</h2>
         </div>
     )
