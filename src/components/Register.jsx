@@ -1,14 +1,28 @@
-import {Link} from "react-router-dom";
-
-
-const Register = ()=>{
+import { Logo, FormRow } from '../components';
+ import Wrapper from '../assets/wrappers/RegisterAndLoginPage';
+ import { Link } from 'react-router-dom';
+ const Register = () => {
   return (
-      <div>
-          <h1>This Register is being opened through the file</h1>
-          <h2>Sorry, through the external file</h2>
-          <Link to= '/login'>Login here</Link>
-      </div>
-  )
-}
-
-export default Register;
+    <Wrapper>
+      <form className='form'>
+        <Logo />
+        <h4>Register</h4>
+        <FormRow type='text' name='name' />
+        <FormRow type='text' name='lastName' labelText='last name' />
+        <FormRow type='text' name='location' />
+        <FormRow type='email' name='email' />
+        <FormRow type='password' name='password' />
+        <button type='submit' className='btn btn-block'>
+          submit
+        </button>
+        <p>
+          Already a member?
+          <Link to='/login' className='member-btn'>
+            Login
+          </Link>
+        </p>
+      </form>
+    </Wrapper>
+  );
+ };
+ export default Register;
