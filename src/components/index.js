@@ -2,3 +2,8 @@ export {default as Login} from './Login';
 export {default as Register} from './Register';
 export {default as FormRow} from './FormRow';
 export {default as Logo} from './Logo';
+export {default as BigSidebar} from './BigSidebar';
+export {default as LogoutContainer} from './LogoutContainer';
+export {default as Navbar} from './Navbar';
+export {default as NavLinks} from './NavLinks';
+export {default as SmallSidebar} from './SmallSidebar';
